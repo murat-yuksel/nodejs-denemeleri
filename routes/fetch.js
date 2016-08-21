@@ -11,8 +11,6 @@ var hurriyetfetcher = require("../src/hurriyet-fetcher.js");
 router.get('/hurriyet', function(req, res, next) {
 
     hurriyetfetcher.fetch();
-    // var page = "http://www.hurriyet.com.tr/index/gulben-ergen";
-    // console.log("Visiting page " + pageToVisit);
 
     res.render('index', { title: 'Express' });
 });
